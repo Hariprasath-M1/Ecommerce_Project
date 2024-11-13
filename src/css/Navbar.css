@@ -1,0 +1,201 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navigation bar styles */
+  nav {
+    background-color: white;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    height: 70px;
+  }
+  
+  nav .logo > img {
+    width: 65px;
+    height: 65px;
+  }
+  
+  nav .logo > img:hover {
+    transition: all 0.5s ease 0s;
+    color: black; 
+  }
+  
+  .navlinks {
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+  }
+  
+  .navlinks > .link {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .navlinks > .link:hover {
+    transition: all 0.5s ease 0s;
+    color: black;
+    text-decoration: underline;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    padding: 0.5rem;
+    border: 0px solid gray;
+    border-radius: 20px;
+    background-color: rgb(235, 229, 229);
+  }
+  
+  .search-bar button {
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    border: none;
+    background-color: transparent;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    color: black;
+  }
+  
+  .login button {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  
+  .login button:hover {
+    transition: all 0.2s ease-in-out 0s;
+    color: black;
+    background-color: rgb(224, 222, 222);
+    box-shadow: 0 0 2px white;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 420px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto;
+      padding: 10px;
+    }
+  
+    nav .logo {
+      margin-bottom: 10px;
+    }
+  
+    nav .logo > img {
+      height: 50px;
+      width: 50px;
+    }
+  
+    .navlinks {
+      flex-direction: column;
+      width: 100%;
+      align-items: flex-start;
+    }
+  
+    .navlinks > .link {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  
+    .search-bar {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .login {
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    .login button {
+      padding: 7px 15px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+  
+  /* Tablet responsiveness */
+  @media (min-width: 421px) and (max-width: 768px) {
+    nav {
+      padding: 0 10px;
+      height: 70px;
+    }
+  
+    nav .logo > img {
+      height: 55px;
+      width: 55px;
+    }
+  
+    .navlinks > .link {
+      font-size: 18px;
+    }
+  
+    .login button {
+      padding: 8px 17px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: white;
+    color: gray;
+    padding: 20px;
+    text-align: center;
+    border-top: 0.5px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .section {
+    flex: 1 1 200px;
+    margin: 20px;
+  }
+  
+  .section p {
+    margin: 5px 0;
+  }
+  
+  .link {
+    color: gray;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    color: blue;
+  }
+  
+  /* Footer mobile responsiveness */
+  @media (max-width: 600px) {
+    .footer {
+      flex-direction: column;
+    }
+  
+    .section {
+      margin: 10px 0;
+    }
+  }
+  

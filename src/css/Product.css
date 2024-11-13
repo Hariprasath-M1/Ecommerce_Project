@@ -1,0 +1,129 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.product-aside>.search>input{
+    font: size 22px;
+}
+.product-aside>.filter{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.product-aside>.filter>select{
+    width: 20%;
+    font-size: 25px;
+    font-weight: bold;
+    height: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card>img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #555;
+    margin: auto;
+}
+
+.card h4 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: gray;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.buttons button {
+    background-color:black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.buttons2{
+    color: black;
+}
+
+.buttons button:hover {
+    background-color: gray;
+    
+}
+
+.buttons button:first-child {
+    background-color: lightgray;
+}
+
+.buttons button:first-child:hover {
+    background-color: gray;
+}
+
+@media screen and (max-width:420px) {
+    .products {
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,28 @@
+.footer {
+    background-color: white;
+    color: gray;
+    padding: 20px;
+    text-align: center;
+    border-top: 0.5px solid gray;
+    display: flex;
+    justify-content: space-around;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  }
+  
+  .section {
+    flex: 1;
+    margin: 0 20px;
+  }
+  .section p{
+    margin: 5px 0;
+    
+  }
+  
+  .link {
+    color:gray;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    color: blue;
+  }

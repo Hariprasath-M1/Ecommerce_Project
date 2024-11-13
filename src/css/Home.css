@@ -1,0 +1,86 @@
+.home-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+     background-image: url('nikeb.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white(0, 0, 0, 0.3); /* Optional: for a dark overlay effect */
+  }
+  
+  .content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    color: white;
+    z-index: 1;
+  }
+  
+  .text-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .text-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .text-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color:black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .text-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: darkgrey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .shop-button {
+    background-color:black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  
+  .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); */
+    height: 400px;
+    margin-left: 70px;
+  }
+  .arrow{
+    margin-left: 15px;
+  }
